@@ -124,7 +124,7 @@ from covid_vaccination;
 
 ---------------------------------------------------------------------------------------------------
 
--- DELETE UNUSED COLUMNS & RENAME THE CONVERTED COLUMNS
+-- DELETE UNUSED COLUMNS & RENAME THE CONVERTED COLUMNS (IT ISN'T IMPERATIVE) 
 
 -- Covid deaths table 
 
