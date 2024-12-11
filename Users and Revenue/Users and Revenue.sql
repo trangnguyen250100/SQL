@@ -23,6 +23,8 @@ SELECT
 FROM `firebase-public-project.analytics_153293282.events_*`,
   UNNEST (event_params) AS ep
 
+
+  
 -- Transform table: Processed data with calculated indicators and simplified structure. 
 CREATE TABLE `trangthu.transform.users_and_revenue` AS 
 WITH 
@@ -94,6 +96,8 @@ WITH
 SELECT * 
 FROM final 
 
+
+  
 -- Aggregated metrics for reporting based on key dimensions. 
 SELECT 
   event_date,
