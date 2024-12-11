@@ -104,8 +104,8 @@ SELECT
   country,
   app_version,
   COUNT(DISTINCT user_id) AS num_active_users,
-  COUNT(DISTINCT IF(is_new_user is true, user_id, null)) AS num_new_users,
-  COUNT(DISTINCT IF(is_remove_user is true, user_id, null)) AS num_remove_users,
+  COUNT(DISTINCT IF(is_new_user IS TRUE, user_id, NULL)) AS num_new_users,
+  COUNT(DISTINCT IF(is_remove_user IS TRUE, user_id, NULL)) AS num_remove_users,
   SUM(revenue) AS revenue, 
   SUM(ad_revenue) AS ad_revenue,
   SUM(iap_revenue) AS iap_revenue
